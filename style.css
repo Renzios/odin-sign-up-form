@@ -1,42 +1,29 @@
 body {
-    display: flex;
+    background-image: url("./images/background-light.jpg");
+    background-position: top center;
 }
 
-body > img {
+#foreground {
+    margin: auto;
+    width: calc(100vw / 3);
     height: 100vh;
-}
 
-body > div {
-    width: 100%;
+    background-color: white;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    gap: 16px;
-
-    background-color: #F9FAFB;
+    align-items: center;
+    gap: 8px;
 }
 
-form > div {
-    background-color: white;
+#logo {
+    width: calc(100% / 3);
 }
 
-input {
-    border-color: #E5E7EB;
-}
-
-input:invalid {
-    border-color: red;
-}
-
-input:focus {
-    border-color: blue;
-}
-
-button[type="submit"] {
-    background-color: #596D48;
-    color: white;
-    border: none;
-    border-radius: 12px;
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
 }
