@@ -8,18 +8,17 @@
     <title>Sign-up Form</title>
 </head>
 <body>
-    <div id="foreground">
-        <img id="logo" src="./images/logo.svg">
-        <form>
-            <input type="text" id="user-id" placeholder="User ID" minlength="8" maxlength="8" required>
-            <input type="password" id="password" placeholder="Password" required>
-            <div>
-                <input type="checkbox" id="remember-me">
-                <label for="remember-me">Remember me</label>
-            </div>
-            <button type="submit">Login</button>
-        </form>
-        <a id="forgot-password" href="">Forgot password?</a>
+    <div>
+        <div>
+            <img src="./images/logo.svg">
+            <form method="post" action="https://enroll.dlsu.edu.ph/dlsu/user_login_p">
+                <input type="text" id="user-id" name="V_USER_ID" placeholder="User ID" minlength="8" maxlength="8" pattern="^\d+$" required>
+                <input type="password" id="password" name="V_PASSWORD" placeholder="Password" maxlength="50" required>
+                <button type="submit">Login</button>
+            </form>
+            <a href="https://enroll.dlsu.edu.ph/dlsu/forgotpassword">Forgot password?</a>
+        </div>
+        <a href="https://my.dlsu.edu.ph/create_account.asp">Activate your account?</a>
     </div>
-</body>
+</body> 
 </html>

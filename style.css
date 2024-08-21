@@ -1,29 +1,86 @@
 body {
     background-image: url("./images/background-light.jpg");
+    backdrop-filter: blur(4px);
     background-position: top center;
 }
 
-#foreground {
-    margin: auto;
-    width: calc(100vw / 3);
-    height: 100vh;
-
-    background-color: white;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
+a {
+    color: black;
 }
 
-#logo {
-    width: calc(100% / 3);
+a:hover {
+    color: green;
 }
 
+body > div,
+button {
+    box-shadow: 0px 2px 2px 0px black;
+}
+
+body > div,
+body > div > div,
 form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 8px;
+}
+
+body > div {
+    margin: auto;
+    width: calc(100vw / 3);
+    height: 100vh;
+
+    background-color:rgba(255, 255, 255, 0.5);
+
+    align-items: center;
+}
+
+img {
+    width: 50%;
+
+    align-self: center;
+}
+
+body > div > a{
+    position: absolute;
+
+    margin-bottom: 8px;
+
+    bottom: 0;
+}
+
+input,
+button {
+    border-radius: 4px;
+    height: 32px;
+}
+
+input {
+    border: 1px solid black;
+    outline: none;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:placeholder-shown {
+    border-color: black;
+}
+
+button {
+    border: none;
+    background-color: green;
+    color: white;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: white;
+    color: green;
 }
