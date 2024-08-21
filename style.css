@@ -19,4 +19,29 @@ body > div {
     justify-content: center;
 
     gap: 16px;
+
+    background-color: #F9FAFB;
+}
+
+form > div {
+    background-color: white;
+}
+
+input {
+    border-color: #E5E7EB;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:focus {
+    border-color: blue;
+}
+
+button[type="submit"] {
+    background-color: #596D48;
+    color: white;
+    border: none;
+    border-radius: 12px;
 }
